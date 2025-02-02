@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speed Typing Test</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Speed Typing Test</h1>
+    
+    <div class="stats-container">
+      <div class="stat-card">
+        <div class="stat-header">
+          <i data-lucide="timer" class="icon"></i>
+          <span class="label">Time Left</span>
+        </div>
+        <div class="stat-value" id="timeLeft">60s</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-header">
+          <i data-lucide="activity" class="icon"></i>
+          <span class="label">WPM</span>
+        </div>
+        <div class="stat-value" id="wpm">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-header">
+          <i data-lucide="trophy" class="icon"></i>
+          <span class="label">Accuracy</span>
+        </div>
+        <div class="stat-value" id="accuracy">100%</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-header">
+          <i data-lucide="refresh-cw" class="icon cursor-pointer" id="resetButton"></i>
+          <span class="label">Reset</span>
+        </div>
+        <div class="stat-value">Test</div>
+      </div>
+    </div>
+
+    <div class="sample-text" id="sampleText"></div>
+
+    <textarea
+      id="input"
+      class="input-area"
+      placeholder="Start typing here..."
+    ></textarea>
+
+    <div class="results" id="results">
+      <h2>Test Complete!</h2>
+      <div class="result-cards">
+        <div class="result-card">
+          <div class="result-value" id="finalWpm">0</div>
+          <div class="result-label">Words per minute</div>
+        </div>
+        <div class="result-card">
+          <div class="result-value" id="finalAccuracy">0%</div>
+          <div class="result-label">Accuracy</div>
+        </div>
+        <div class="result-card">
+          <div class="result-value" id="finalMistakes">0</div>
+          <div class="result-label">Mistakes</div>
+        </div>
+      </div>
+      <button class="try-again-btn" id="tryAgainBtn">Try Again</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
